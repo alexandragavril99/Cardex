@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_cardex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sendFeedbackBtn"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/sendFeedbackBtn"
+        app:layout_constraintTop_toBottomOf="@+id/sendFeedbackBtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/feedbackTitleId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingTop="60dp"
+        android:text="@string/feedback_title"
+        android:textColor="@color/lightTextColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/feedbackId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/feedback_string"
+        android:textAlignment="center"
+        android:textColor="@color/lightTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/feedbackTitleId"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/feedbackTitleId"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackTitleId"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/feedbackId"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/feedbackId"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackId"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/recommendTV"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/recommend_string"
+        android:textAlignment="center"
+        android:textColor="@color/lightTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ratingBar"
+        app:layout_constraintStart_toStartOf="@+id/ratingBar"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <Button
+        android:id="@+id/sendFeedbackBtn"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:background="@color/btnColor"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/send_feedback"
+        android:textColor="@color/lightTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radiobuttonGroup"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/radiobuttonGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radiobuttonGroup"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <RadioGroup
+        android:id="@+id/radiobuttonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/recommendTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommendTV"
+        app:layout_constraintEnd_toEndOf="@+id/recommendTV"
+        app:layout_constraintVertical_bias="0.13"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes_string"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/lightTextColor"
+            android:textColorHighlight="@color/darkTextColor"
+            android:fontFamily="@font/poppins_semibold"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_string"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/lightTextColor"
+            android:textColorHighlight="@color/darkTextColor"
+            android:fontFamily="@font/poppins_semibold"
+            />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

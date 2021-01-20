@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/PhoneTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/hintColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordTV"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <TextView
+        android:id="@+id/currentBirthdayTV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/darkTextColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/BirthdayTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/BirthdayTV"
+        app:layout_constraintTop_toTopOf="@+id/BirthdayTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/currentEmailTV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/darkTextColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/EmailTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/EmailTV"
+        app:layout_constraintTop_toTopOf="@+id/EmailTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/currentPhoneTV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/darkTextColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/PhoneTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/PhoneTV"
+        app:layout_constraintTop_toTopOf="@+id/PhoneTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonDeleteAccount"
+        android:layout_width="313dp"
+        android:layout_height="55dp"
+        android:background="@color/btnColor"
+        android:text="@string/DeleteAccount"
+        android:textColor="@color/lightTextColor"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonEditProfile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonEditProfile"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEditProfile"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <Button
+        android:id="@+id/buttonEditProfile"
+        android:layout_width="313dp"
+        android:layout_height="55dp"
+        android:background="@color/btnColor"
+        android:text="@string/editProfile"
+        android:textColor="@color/lightTextColor"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BirthdayTV"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <TextView
+        android:id="@+id/BirthdayTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/hintColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailTV"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/EmailTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/hintColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneTV"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <TextView
+        android:id="@+id/PasswordTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/hintColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameTV"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/UsernameTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/hintColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/currentUsernameTV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/darkTextColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/UsernameTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/UsernameTV"
+        app:layout_constraintTop_toTopOf="@+id/UsernameTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/currentPasswordTV"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="3dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/darkTextColor"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/PasswordTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/PasswordTV"
+        app:layout_constraintTop_toTopOf="@+id/PasswordTV"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idProfileTitle"
+        app:layout_constraintVertical_bias="0.03"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/storeLogoImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.147"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.509"
+                android:src="@drawable/default_profile_pic"/>
+
+            <TextView
+                android:id="@+id/NameTitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkTextColor"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintBottom_toBottomOf="@+id/storeLogoImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.354"
+                app:layout_constraintStart_toEndOf="@+id/storeLogoImage"
+                app:layout_constraintTop_toTopOf="@+id/storeLogoImage"
+                app:layout_constraintVertical_bias="0.217" />
+
+            <TextView
+                android:id="@+id/SurnameTitle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkTextColor"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintBottom_toBottomOf="@+id/storeLogoImage"
+                app:layout_constraintEnd_toEndOf="@+id/NameTitle"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/NameTitle"
+                app:layout_constraintTop_toBottomOf="@+id/NameTitle" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/idProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"
+        android:text="@string/profile_title"
+        android:textColor="@color/lightTextColor"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

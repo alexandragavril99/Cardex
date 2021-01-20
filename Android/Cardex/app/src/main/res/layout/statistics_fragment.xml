@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="121dp"
+        android:src="@drawable/logo_cardex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rateAppForCharts"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/rateAppForCharts"
+        app:layout_constraintTop_toBottomOf="@+id/rateAppForCharts"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/showPieChartBtn"
+        android:layout_width="209dp"
+        android:layout_height="55dp"
+        android:background="@color/btnColor"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/showPieChart"
+        android:textColor="@color/lightTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/wouldRecommendTV"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/wouldRecommendTV"
+        app:layout_constraintTop_toBottomOf="@+id/wouldRecommendTV"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Button
+        android:id="@+id/rateAppForCharts"
+        android:layout_width="209dp"
+        android:layout_height="55dp"
+        android:background="@color/btnColor"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/rate_app"
+        android:textColor="@color/lightTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/noStarsTV"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/noStarsTV"
+        app:layout_constraintTop_toBottomOf="@+id/noStarsTV"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <TextView
+        android:id="@+id/seeStatisticsTV"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/seeStatistics"
+        android:textAlignment="center"
+        android:textColor="@color/lightTextColor"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idStatisticsTitle"
+        app:layout_constraintStart_toStartOf="@+id/idStatisticsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/idStatisticsTitle"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <TextView
+        android:id="@+id/wouldRecommendTV"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/pressForStatistics"
+        android:textAlignment="center"
+        android:textColor="@color/lightTextColor"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/seeStatisticsTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/seeStatisticsTV"
+        app:layout_constraintTop_toBottomOf="@+id/seeStatisticsTV"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/noStarsTV"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/contributeWithFeedback"
+        android:textAlignment="center"
+        android:textColor="@color/lightTextColor"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/showPieChartBtn"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/showPieChartBtn"
+        app:layout_constraintTop_toBottomOf="@+id/showPieChartBtn"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:id="@+id/idStatisticsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingTop="40dp"
+        android:text="@string/statistics"
+        android:textColor="@color/lightTextColor"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

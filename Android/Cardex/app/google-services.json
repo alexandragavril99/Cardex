@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1032971273579",
+    "project_id": "proiectapostugavril1081",
+    "storage_bucket": "proiectapostugavril1081.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032971273579:android:dc6c45c40cae66844af82e",
+        "android_client_info": {
+          "package_name": "com.example.proiect_apostu_gavril_1081"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032971273579-6smrc07is60vf3dt6r4uvlicgqr1vhs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlHctpVlxPPEhAG9JljyewMVUXK4TxlX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032971273579-6smrc07is60vf3dt6r4uvlicgqr1vhs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
